@@ -1,5 +1,6 @@
 .container {
-    flex-basis: 900px;
+    max-width: 900px;
+    margin: auto;
     margin-top: 30px;
   }
   

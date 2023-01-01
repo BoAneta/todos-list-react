@@ -11,6 +11,4 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
-  display: flex;
-  justify-content: center;
 }
