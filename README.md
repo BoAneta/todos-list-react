@@ -1,6 +1,25 @@
-# To Do List
+# To Do List in React
+
+This is my forth project in FrontEnd Dev course with YouCode. It's a simply TO DO List where you can add a task, mark it as done or delete it. You can also hide done tasks and mark all tasks as done.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Demo
+
+https://boaneta.github.io/todos-list-react/
+
+# Languages and Tools used in the project:
+
+- HTML
+- Normalize
+- BEM
+- CSS (Flex, Grid)
+- JavaScript
+- ES6+ features
+- Node.js
+- React
+
+![To Do List gif](/to-do.gif)
 
 ## Available Scripts
 
