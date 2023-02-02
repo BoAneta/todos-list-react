@@ -11,7 +11,7 @@ export const FormElement = styled.form`
     }   
 `;
 
-export const NewTask = styled.input`
+export const Input = styled.input`
     padding: 5px;
     border: 2px solid #eeeeee;
 `;

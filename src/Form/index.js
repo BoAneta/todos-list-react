@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, FormElement, NewTask } from "./styled";
+import { Button, FormElement, Input} from "./styled";
 
 const Form = ({addNewTask}) => {
 
@@ -15,7 +15,7 @@ const Form = ({addNewTask}) => {
 
   return (
     <FormElement onSubmit={onFormSubmit}>
-      <NewTask
+      <Input
         value={newTaskContent}
         placeholder="Co jest do zrobienia?"
         autoFocus
