@@ -1,10 +1,10 @@
 import Form from "./Form";
-import List from "./List";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useEffect, useState } from "react";
+import Tasks from "./Tasks";
 
 function App() {
 
@@ -60,7 +60,7 @@ function App() {
       <Section
         title="Lista zadań"
         body={
-          <List
+          <Tasks
             tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
