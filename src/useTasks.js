@@ -8,8 +8,7 @@ export const useTasks = () => {
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
-    }, [tasks]
-    );
+    }, [tasks]);
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
