@@ -6,7 +6,6 @@ import Tasks from "./Tasks";
 import { useTasks } from "./useTasks";
 
 function App() {
-
   const {
     tasks,
     hideDone,
