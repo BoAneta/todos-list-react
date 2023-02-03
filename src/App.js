@@ -1,7 +1,6 @@
 import Form from "./Form";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Header from "./Header";
 import Container from "./Container";
 import Tasks from "./Tasks";
 import { useTasks } from "./useTasks";
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <Container>
-      <Header title="Lista zadań" />
+      <h1>Lista zadań</h1>
       <Section
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
