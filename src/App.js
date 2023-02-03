@@ -9,12 +9,12 @@ import { useTasks } from "./useTasks";
 function App() {
 
   const {
-    tasks, 
-    hideDone, 
-    toggleHideDone, 
-    removeTask, 
-    toggleTaskDone, 
-    setAllDone, 
+    tasks,
+    hideDone,
+    toggleHideDone,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
     addNewTask
   } = useTasks();
 
