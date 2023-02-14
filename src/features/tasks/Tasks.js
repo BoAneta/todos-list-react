@@ -11,12 +11,13 @@ import { selectTasks } from "./tasksSlice";
 function Tasks() {
 
   const { tasks } = useSelector(selectTasks);
+  
   const {
     // tasks,
     // hideDone,
     // toggleHideDone,
     removeTask,
-    toggleTaskDone,
+    // toggleTaskDone,
     setAllDone,
     addNewTask
   } = useTasks();
@@ -33,7 +34,6 @@ function Tasks() {
         body={
           <TasksList
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />}
         extraHeaderContent={
           <Buttons
