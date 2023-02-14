@@ -16,7 +16,7 @@ function Tasks() {
     // tasks,
     // hideDone,
     // toggleHideDone,
-    removeTask,
+    // removeTask,
     // toggleTaskDone,
     setAllDone,
     addNewTask
@@ -33,7 +33,6 @@ function Tasks() {
         title="Lista zadań"
         body={
           <TasksList
-            removeTask={removeTask}
           />}
         extraHeaderContent={
           <Buttons
