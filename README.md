@@ -19,7 +19,8 @@ https://boaneta.github.io/todos-list-react/
 - JavaScript
 - ES6+ features
 - Node.js
-- React
+- React.js
+- Redux
 
 ![To Do List gif](/to-do.gif)
 
