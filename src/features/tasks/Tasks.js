@@ -1,16 +1,10 @@
-import { useSelector } from "react-redux";
 import Form from "./Form";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
 import TasksList from "./TasksList";
-import { selectTasks } from "./tasksSlice";
-
 
 function Tasks() {
-
-  const { tasks } = useSelector(selectTasks);
-
   return (
     <Container>
       <h1>Lista zadań</h1>

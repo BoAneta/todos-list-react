@@ -3,7 +3,7 @@ import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
 import { Tasks, TasksButtons } from "./styled";
 
 const Buttons = () => {
-    const {tasks, hideDone} = useSelector(selectTasks);
+    const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
 
     return (

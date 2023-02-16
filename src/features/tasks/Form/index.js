@@ -2,10 +2,9 @@ import { nanoid } from "@reduxjs/toolkit";
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../tasksSlice";
-import { Button, FormElement, Input} from "./styled";
+import { Button, FormElement, Input } from "./styled";
 
 const Form = () => {
-
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
 
@@ -15,8 +14,8 @@ const Form = () => {
     event.preventDefault();
 
     const trimmedNewTaskContent = newTaskContent.trim();
-    
-    if(!trimmedNewTaskContent) {
+
+    if (!trimmedNewTaskContent) {
       return;
     }
 
@@ -37,7 +36,7 @@ const Form = () => {
         placeholder="Co jest do zrobienia?"
         autoFocus
         ref={inputRef}
-        onChange={({target}) => setNewTaskContent(target.value)}
+        onChange={({ target }) => setNewTaskContent(target.value)}
       />
       <Button>Dodaj zadanie</Button>
     </FormElement>
