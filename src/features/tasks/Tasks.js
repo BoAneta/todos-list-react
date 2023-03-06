@@ -3,6 +3,7 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
 import TasksList from "./TasksList";
+import ExampleTasksButton from "./ExampleTasksButton";
 
 function Tasks() {
   return (
@@ -10,6 +11,9 @@ function Tasks() {
       <h1>Lista zadań</h1>
       <Section
         title="Dodaj nowe zadanie"
+        extraHeaderContent={
+          <ExampleTasksButton />
+        }
         body={<Form />}
       />
       <Section
