@@ -1,11 +1,11 @@
-import Form from "./Form";
-import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Container from "../../common/Container";
-import TasksList from "./TasksList";
-import ExampleTasksButton from "./ExampleTasksButton";
+import Form from "../TasksPage/Form";
+import Buttons from "../TasksPage/Buttons";
+import Section from "../../../common/Section";
+import Container from "../../../common/Container";
+import TasksList from "../TasksPage/TasksList";
+import ExampleTasksButton from "../ExampleTasksButton";
 
-function Tasks() {
+function TasksPage() {
   return (
     <Container>
       <h1>Lista zadań</h1>
@@ -29,4 +29,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;

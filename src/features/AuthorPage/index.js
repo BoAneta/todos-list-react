@@ -1,5 +1,5 @@
-import Container from "../../../common/Container";
-import Section from "../../../common/Section";
+import Container from "../../common/Container";
+import Section from "../../common/Section";
 
 export default () => (
   <Container>
