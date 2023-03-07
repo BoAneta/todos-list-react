@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -12,7 +13,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     gap: 10px;
     padding: 10px 0;
-    border-bottom: 1px solid ${({theme}) => theme.color.alto};
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
     ${({ hidden }) => hidden && css`
         display: none;
@@ -60,4 +61,9 @@ export const Button = styled.button`
             filter: brightness(140%);
         }
     `}
+`;
+
+export const StyledLink = styled(Link)`
+    color: ${({ theme }) => theme.color.teal};
+    text-decoration: none;
 `;
