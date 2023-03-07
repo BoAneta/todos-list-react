@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FormElement = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 20px;
     gap: 20px;
 
     @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
