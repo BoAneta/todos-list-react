@@ -4,6 +4,7 @@ import Section from "../../../common/Section";
 import Container from "../../../common/Container";
 import TasksList from "../TasksPage/TasksList";
 import ExampleTasksButton from "../ExampleTasksButton";
+import Input from "../Input";
 
 function TasksPage() {
   return (
@@ -11,19 +12,17 @@ function TasksPage() {
       <h1>Lista zadań</h1>
       <Section
         title="Dodaj nowe zadanie"
-        extraHeaderContent={
-          <ExampleTasksButton />
-        }
+        extraHeaderContent={<ExampleTasksButton />}
         body={<Form />}
       />
       <Section
+        title="Wyszukaj zadanie"
+        body={<Input />}
+      />
+      <Section
         title="Lista zadań"
-        body={
-          <TasksList
-          />}
-        extraHeaderContent={
-          <Buttons
-          />}
+        body={<TasksList />}
+        extraHeaderContent={<Buttons />}
       />
     </Container>
   );
