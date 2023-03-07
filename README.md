@@ -20,7 +20,7 @@ https://boaneta.github.io/todos-list-react/
 - ES6+ features
 - Node.js
 - React.js
-- Redux
+- Redux (Saga, Router)
 
 ![To Do List gif](/to-do.gif)
 
