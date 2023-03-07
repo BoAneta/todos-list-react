@@ -5,8 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const TasksList = () => {
     const location = useLocation();
-    const searchParams = new URLSearchParams(location.search);
-    const query = searchParams.get("szukaj");
+    const query = (new URLSearchParams(location.search)).get("szukaj");
 
     const tasks = useSelector(state => selectTasksByQuery(state, query));
     const hideDone = useSelector(selectHidenDone);
