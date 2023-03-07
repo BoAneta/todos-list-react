@@ -4,7 +4,7 @@ import Section from "../../../common/Section";
 import Container from "../../../common/Container";
 import TasksList from "../TasksPage/TasksList";
 import ExampleTasksButton from "../ExampleTasksButton";
-import Input from "../Input";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -16,8 +16,8 @@ function TasksPage() {
         body={<Form />}
       />
       <Section
-        title="Wyszukaj zadanie"
-        body={<Input />}
+        title="Zadania"
+        body={<Search />}
       />
       <Section
         title="Lista zadań"
