@@ -25,7 +25,7 @@ const tasksSlice = createSlice({
             tasks.forEach((task) => task.done = true);
         },
         fetchExampleTasks: () => { },
-        setTasks: (state, {payload: tasks}) => {
+        setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
         },
     },
@@ -48,6 +48,17 @@ export const selectHidenDone = state => selectTasksState(state).hideDone;
 export const selectAreTaskEmpty = state => selectTasks(state).length === 0;
 export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
 
-export const getTaskById = (state, taskID) => selectTasks(state).find(({id}) => id === taskID);
+export const getTaskById = (state, taskID) => selectTasks(state).find(({ id }) => id === taskID);
+
+export const selectTasksByQuery = (state, query) => {
+    const tasks = selectTasks(state);
+
+    if (!query || query.trim() === "") {
+        return tasks;
+    }
+
+    return tasks.filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
+};
 
 export default tasksSlice.reducer;
