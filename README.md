@@ -4,8 +4,6 @@ This is my forth project in FrontEnd Dev course with YouCode. It's a simply TO D
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![To Do List gif](to-do.gif)
-
 # Demo
 
 https://boaneta.github.io/todos-list-react/
@@ -19,8 +17,8 @@ https://boaneta.github.io/todos-list-react/
 - JavaScript
 - ES6+ features
 - Node.js
-- React.js
-- Redux (Saga, Router)
+- React.js, Router
+- Redux, Saga
 
 ![To Do List gif](/to-do.gif)
 
