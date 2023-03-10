@@ -1,6 +1,6 @@
 import { StyledItem, StyledNavLink, StyledUl } from "./styled";
-const Navigation = () => {
-    return (
+
+const Navigation = () => (
         <nav>
             <StyledUl>
                 <StyledItem>
@@ -11,8 +11,6 @@ const Navigation = () => {
                 </StyledItem>
             </StyledUl>
         </nav>
-
     );
-};
 
 export default Navigation;

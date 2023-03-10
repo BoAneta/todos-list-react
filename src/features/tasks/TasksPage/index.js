@@ -6,7 +6,7 @@ import TasksList from "../TasksPage/TasksList";
 import ExampleTasksButton from "../ExampleTasksButton";
 import Search from "./Search";
 
-function TasksPage() {
+const TasksPage = () => {
   return (
     <Container>
       <h1>Lista zadań</h1>
@@ -26,6 +26,6 @@ function TasksPage() {
       />
     </Container>
   );
-}
+};
 
 export default TasksPage;
