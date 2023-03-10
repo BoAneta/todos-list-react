@@ -3,14 +3,14 @@ import { fetchExampleTasks, fetchExampleTasksError, fetchExampleTasksSuccess, se
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 
-export function* fetchExampleTasksHandler () {
+export function* fetchExampleTasksHandler() {
     try {
         yield delay(1000);
         const exampleTasks = yield call(getExampleTasks);
         yield put(fetchExampleTasksSuccess(exampleTasks));
     } catch (error) {
         yield put(fetchExampleTasksError());
-        yield call(alert, "Coś poszło nie tak");
+        yield call(alert, "Coś poszło nie tak!");
     }
 }
 
