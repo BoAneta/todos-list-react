@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleTaskDone, removeTask, selectHidenDone, selectTasksByQuery } from "../../tasksSlice";
 import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
+import { toTask } from "../../../../routes";
+import { useQueryParameter } from "../../queryParameters";
 
 const TasksList = () => {
-    const location = useLocation();
-    const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
-
+    const query = useQueryParameter(searchQueryParamName);
     const tasks = useSelector(state => selectTasksByQuery(state, query));
     const hideDone = useSelector(selectHidenDone);
 
@@ -28,7 +28,7 @@ const TasksList = () => {
                     </Button>
                     <Content done={task.done}
                     >
-                        <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+                        <StyledLink to={toTask({ id: task.id })}>{task.content}</StyledLink>
                     </Content>
                     <Button
                         remove
