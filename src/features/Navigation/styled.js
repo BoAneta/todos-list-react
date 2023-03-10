@@ -15,7 +15,7 @@ export const StyledNavLink = styled(NavLink)`
 export const StyledUl = styled.ul`
     display: flex;
     justify-content: center;
-    background-color: ${({theme}) => theme.color.teal};
+    background-color: ${({ theme }) => theme.color.teal};
     list-style: none;
     margin: 0;
 `;

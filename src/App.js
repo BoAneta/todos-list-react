@@ -7,20 +7,20 @@ import { toAuthor, toTask, toTasks } from "./routes";
 
 export const App = () => (
     <HashRouter>
-            <Navigation />
-            <Switch>
-                <Route path={toTask()}>
-                    <TaskPage />
-                </Route>
-                <Route path={toTasks()}>
-                    <TasksPage />
-                </Route>
-                <Route path={toAuthor()}>
-                    <AuthorPage />
-                </Route>
-                <Route path="/">
-                    <Redirect to={toTasks()} />
-                </Route>
-            </Switch>
+        <Navigation />
+        <Switch>
+            <Route path={toTask()}>
+                <TaskPage />
+            </Route>
+            <Route path={toTasks()}>
+                <TasksPage />
+            </Route>
+            <Route path={toAuthor()}>
+                <AuthorPage />
+            </Route>
+            <Route path="/">
+                <Redirect to={toTasks()} />
+            </Route>
+        </Switch>
     </HashRouter>
 );
